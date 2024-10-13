@@ -44,14 +44,14 @@ def prune_snn(indptr, data, k, prune):
 
 def snn(distances, prune: float = 1 / 15):
     """
-    Compute the Shared Nearest Neighbors (SNN) graph from a sparse distance matrix.
+    Compute the Shared Nearest Neighbors (SNN) graph from a sparse KNN distance matrix
 
     Parameters
     ----------
     distances : scipy.sparse.csr_matrix
         The sparse distance matrix.
     prune : float, default=1/15
-        The threshold to prune the SNN graph. A value of 1/15 is recommended.
+        The threshold to prune the SNN graph.
 
     Returns
     -------
